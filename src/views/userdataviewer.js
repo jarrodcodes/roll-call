@@ -15,8 +15,7 @@ class UserDataViewer extends Component {
     }
 
     render() {
-        let self = this;
-        let URL = 'http://localhost:3000/?code=5213863414.324749777094.a7210d913eb37b3fd0db66fa290af0bcabbdd8c8caae336596359eb1a0d7e720&state='
+        let URL = window.location.href
         console.log(URL)
         let parsedURL = _.split(URL, '=', 2)
         let parsedURL2 = parsedURL[1]
@@ -33,7 +32,7 @@ class UserDataViewer extends Component {
             return (
                 <div>
                     Hi
-                    </div>
+</div>
             )
         }
     }
