@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
+import UserDataContainer from './containers/userdatacontainer.js';
 
 class App extends Component {
 
@@ -22,7 +23,7 @@ class App extends Component {
                 </ul>
               </div>
           </nav>
-          <Route exact path="/" component='' />
+          <Route exact path="/" component={UserDataContainer} />
         </div>
       </Router>
 
