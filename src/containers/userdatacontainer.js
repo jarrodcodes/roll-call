@@ -4,20 +4,16 @@ import { bindActionCreators } from 'redux';
 import UserDataViewer from '../views/userdataviewer.js';
 import _ from 'lodash'
 
-class UserDataContainer extends Component {
+class UserLandingPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
         }
     }
-    componentWillMount() {
-
-    }
 
     render() {
 
         let self = this;
-        console.log(self.state, 'state')
         let URL = window.location.href
         let parsedURL = _.split(URL, '=', 2)
         let parsedURL2 = parsedURL[1]
@@ -52,4 +48,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({}, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserDataContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(UserLandingPage);

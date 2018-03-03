@@ -1,0 +1,128 @@
+2018-01-16 21:07:06.989 EST [11292] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-16 21:07:06.989 EST [11292] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-16 21:07:07.130 EST [11360] LOG:  database system was shut down at 2018-01-16 21:04:22 EST
+2018-01-16 21:07:07.171 EST [11292] LOG:  database system is ready to accept connections
+2018-01-16 21:10:38.057 EST [5380] FATAL:  role "root" does not exist
+2018-01-16 21:11:49.586 EST [8544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-01-17 00:40:48.309 EST [11292] LOG:  received fast shutdown request
+2018-01-17 00:40:48.410 EST [11292] LOG:  aborting any active transactions
+2018-01-17 00:40:48.434 EST [11292] LOG:  worker process: logical replication launcher (PID 11444) exited with exit code 1
+2018-01-17 00:40:48.443 EST [11412] LOG:  shutting down
+2018-01-17 00:40:48.645 EST [11292] LOG:  database system is shut down
+2018-01-20 11:24:05.139 EST [2152] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 11:24:05.140 EST [2152] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 11:24:05.254 EST [8572] LOG:  database system was interrupted; last known up at 2018-01-19 19:58:30 EST
+2018-01-20 11:24:05.855 EST [8572] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-01-20 11:24:05.867 EST [8572] LOG:  redo starts at 0/1704EB8
+2018-01-20 11:24:05.867 EST [8572] LOG:  invalid record length at 0/1704F98: wanted 24, got 0
+2018-01-20 11:24:05.867 EST [8572] LOG:  redo done at 0/1704F60
+2018-01-20 11:24:05.928 EST [2152] LOG:  database system is ready to accept connections
+2018-01-20 11:24:27.918 EST [412] FATAL:  role "jarrod_young" does not exist
+2018-01-20 11:24:59.156 EST [2152] LOG:  received fast shutdown request
+2018-01-20 11:24:59.160 EST [2152] LOG:  aborting any active transactions
+2018-01-20 11:24:59.169 EST [2152] LOG:  worker process: logical replication launcher (PID 1840) exited with exit code 1
+2018-01-20 11:24:59.173 EST [5076] LOG:  shutting down
+2018-01-20 11:24:59.217 EST [2152] LOG:  database system is shut down
+2018-01-20 11:25:55.271 EST [4024] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 11:25:55.272 EST [4024] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 11:25:55.347 EST [8320] LOG:  database system was shut down at 2018-01-20 11:25:38 EST
+2018-01-20 11:25:55.381 EST [4024] LOG:  database system is ready to accept connections
+2018-01-20 11:26:26.626 EST [2728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-01-20 11:34:44.480 EST [4024] LOG:  received fast shutdown request
+2018-01-20 11:34:44.577 EST [4024] LOG:  aborting any active transactions
+2018-01-20 11:34:44.590 EST [4024] LOG:  worker process: logical replication launcher (PID 8372) exited with exit code 1
+2018-01-20 11:34:44.601 EST [4928] LOG:  shutting down
+2018-01-20 11:34:44.663 EST [4024] LOG:  database system is shut down
+2018-01-20 11:43:24.632 EST [4220] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 11:43:24.632 EST [4220] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 11:43:24.710 EST [6940] LOG:  database system was shut down at 2018-01-20 11:34:44 EST
+2018-01-20 11:43:24.742 EST [4220] LOG:  database system is ready to accept connections
+2018-01-20 16:47:24.999 EST [4220] LOG:  received fast shutdown request
+2018-01-20 16:47:25.025 EST [4220] LOG:  aborting any active transactions
+2018-01-20 16:47:25.045 EST [4220] LOG:  worker process: logical replication launcher (PID 6924) exited with exit code 1
+2018-01-20 16:47:25.055 EST [8076] LOG:  shutting down
+2018-01-20 16:47:25.112 EST [4220] LOG:  database system is shut down
+2018-01-20 16:54:04.779 EST [10908] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 16:54:04.780 EST [10908] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 16:54:04.861 EST [10060] LOG:  database system was shut down at 2018-01-20 16:47:25 EST
+2018-01-20 16:54:04.864 EST [10060] LOG:  invalid primary checkpoint record
+2018-01-20 16:54:04.864 EST [10060] LOG:  invalid secondary checkpoint record
+2018-01-20 16:54:04.864 EST [10060] PANIC:  could not locate a valid checkpoint record
+2018-01-20 16:54:05.004 EST [10908] LOG:  startup process (PID 10060) was terminated by exception 0xC0000409
+2018-01-20 16:54:05.004 EST [10908] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-01-20 16:54:05.004 EST [10908] LOG:  aborting startup due to startup process failure
+2018-01-20 16:54:05.009 EST [10908] LOG:  database system is shut down
+2018-01-20 16:54:16.347 EST [10936] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 16:54:16.348 EST [10936] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 16:54:16.449 EST [8008] LOG:  database system was shut down at 2018-01-20 16:47:25 EST
+2018-01-20 16:54:16.451 EST [8008] LOG:  invalid primary checkpoint record
+2018-01-20 16:54:16.451 EST [8008] LOG:  invalid secondary checkpoint record
+2018-01-20 16:54:16.451 EST [8008] PANIC:  could not locate a valid checkpoint record
+2018-01-20 16:54:16.515 EST [10936] LOG:  startup process (PID 8008) was terminated by exception 0xC0000409
+2018-01-20 16:54:16.515 EST [10936] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2018-01-20 16:54:16.515 EST [10936] LOG:  aborting startup due to startup process failure
+2018-01-20 16:54:16.521 EST [10936] LOG:  database system is shut down
+2018-01-20 16:55:35.286 EST [3028] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-20 16:55:35.287 EST [3028] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-20 16:55:35.395 EST [8912] LOG:  database system was shut down at 2018-01-20 16:55:25 EST
+2018-01-20 16:55:35.439 EST [3028] LOG:  database system is ready to accept connections
+2018-01-20 16:56:06.553 EST [9376] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2018-01-20 17:25:12.300 EST [10448] ERROR:  column stations.$lineColor does not exist at character 118
+2018-01-20 17:25:12.300 EST [10448] HINT:  Perhaps you meant to reference the column "stations.lineColor".
+2018-01-20 17:25:12.300 EST [10448] STATEMENT:  SELECT "id", "name", "placeID", "lineColor", "parking", "createdAt", "updatedAt" FROM "stations" AS "stations" WHERE "stations"."$lineColor" = '%Red%';
+2018-01-20 17:33:09.830 EST [9592] ERROR:  syntax error at or near "%" at character 45
+2018-01-20 17:33:09.830 EST [9592] STATEMENT:  SELECT * FROM stations WHERE lineColor like %Red%
+2018-01-20 17:34:28.114 EST [8940] ERROR:  syntax error at or near "%" at character 49
+2018-01-20 17:34:28.114 EST [8940] STATEMENT:  SELECT * FROM "stations" WHERE "lineColor" like %Red%
+2018-01-20 17:35:42.207 EST [10860] ERROR:  syntax error at or near "%" at character 45
+2018-01-20 17:35:42.207 EST [10860] STATEMENT:  SELECT * FROM stations WHERE lineColor like %Red%
+2018-01-20 17:37:42.280 EST [848] ERROR:  syntax error at or near "%" at character 45
+2018-01-20 17:37:42.280 EST [848] STATEMENT:  SELECT * FROM stations WHERE lineColor like %Red%
+2018-01-20 18:19:55.709 EST [3028] LOG:  received fast shutdown request
+2018-01-20 18:19:55.722 EST [3028] LOG:  aborting any active transactions
+2018-01-20 18:19:55.746 EST [3028] LOG:  worker process: logical replication launcher (PID 6688) exited with exit code 1
+2018-01-20 18:19:55.754 EST [11120] LOG:  shutting down
+2018-01-20 18:19:55.821 EST [3028] LOG:  database system is shut down
+2018-01-27 21:02:45.932 EST [12164] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-27 21:02:45.934 EST [12164] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-27 21:02:46.275 EST [5212] LOG:  database system was shut down at 2018-01-25 21:17:04 EST
+2018-01-27 21:02:46.699 EST [12164] LOG:  database system is ready to accept connections
+2018-01-30 20:16:51.021 EST [12164] LOG:  received fast shutdown request
+2018-01-30 20:16:51.029 EST [12164] LOG:  aborting any active transactions
+2018-01-30 20:16:51.146 EST [6248] FATAL:  terminating autovacuum process due to administrator command
+2018-01-30 20:16:51.148 EST [12164] LOG:  worker process: logical replication launcher (PID 11920) exited with exit code 1
+2018-01-30 20:16:51.160 EST [10328] LOG:  shutting down
+2018-01-30 20:16:51.252 EST [12164] LOG:  database system is shut down
+2018-02-06 18:50:26.187 EST [11344] LOG:  listening on IPv6 address "::1", port 5432
+2018-02-06 18:50:26.189 EST [11344] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-02-06 18:50:26.299 EST [11520] LOG:  database system was interrupted; last known up at 2018-02-04 22:43:05 EST
+2018-02-06 18:50:27.456 EST [11520] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-02-06 18:50:27.472 EST [11520] LOG:  redo starts at 0/19959B0
+2018-02-06 18:50:27.473 EST [11520] LOG:  invalid record length at 0/1995A90: wanted 24, got 0
+2018-02-06 18:50:27.473 EST [11520] LOG:  redo done at 0/1995A58
+2018-02-06 18:50:27.549 EST [11344] LOG:  database system is ready to accept connections
+2018-02-06 21:56:01.918 EST [11344] LOG:  received fast shutdown request
+2018-02-06 21:56:01.930 EST [11344] LOG:  aborting any active transactions
+2018-02-06 21:56:01.947 EST [11344] LOG:  worker process: logical replication launcher (PID 8200) exited with exit code 1
+2018-02-06 21:56:01.959 EST [12164] LOG:  shutting down
+2018-02-06 21:56:02.029 EST [11344] LOG:  database system is shut down
+2018-02-07 16:22:09.370 EST [9020] LOG:  listening on IPv6 address "::1", port 5432
+2018-02-07 16:22:09.371 EST [9020] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-02-07 16:22:09.486 EST [10552] LOG:  database system was shut down at 2018-02-06 21:56:01 EST
+2018-02-07 16:22:09.530 EST [9020] LOG:  database system is ready to accept connections
+2018-02-07 16:32:08.733 EST [1252] LOG:  listening on IPv6 address "::1", port 5432
+2018-02-07 16:32:08.735 EST [1252] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-02-07 16:32:09.013 EST [6344] LOG:  database system was interrupted; last known up at 2018-02-07 16:27:13 EST
+2018-02-07 16:32:16.609 EST [6344] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-02-07 16:32:16.625 EST [6344] LOG:  redo starts at 0/19E3AA8
+2018-02-07 16:32:16.625 EST [6344] LOG:  invalid record length at 0/19E3B88: wanted 24, got 0
+2018-02-07 16:32:16.626 EST [6344] LOG:  redo done at 0/19E3B50
+2018-02-07 16:32:17.068 EST [1252] LOG:  database system is ready to accept connections
+2018-02-08 00:16:12.260 EST [1252] LOG:  received fast shutdown request
+2018-02-08 00:16:12.280 EST [1252] LOG:  aborting any active transactions
+2018-02-08 00:16:12.308 EST [1252] LOG:  worker process: logical replication launcher (PID 2760) exited with exit code 1
+2018-02-08 00:16:12.322 EST [1084] LOG:  shutting down
+2018-02-08 00:16:12.400 EST [1252] LOG:  database system is shut down
