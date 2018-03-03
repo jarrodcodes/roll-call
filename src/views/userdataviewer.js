@@ -2,49 +2,35 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import _ from 'lodash';
-import axios from 'axios';
+import secret from '../data/ids.js';
 
 class UserDataViewer extends Component {
 
-    componentWillMount() {
-        let self = this;
-    }
+        state = {}
 
-    componentWillReceiveProps(currentProps) {
-
-    }
-
-    render() {
-        let URL = window.location.href
-        console.log(URL)
-        let parsedURL = _.split(URL, '=', 2)
-        let parsedURL2 = parsedURL[1]
-        let parsedURL3 = _.split(parsedURL2, '&', 2)
-        let parsedURL4 = parsedURL3[0]
-        console.log(parsedURL4)
-        if (parsedURL4.length < 10) {
-            return (
-                <a href="https://slack.com/oauth/authorize?scope=identity.basic&client_id=5213863414.323664585827"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
-            )
+        setStateAsync(state) {
+          return new Promise((resolve) => {
+            this.setState(state, resolve)
+          });
         }
-        else {
-            axios.get()
-            return (
-                <div>
-                    Hi
-</div>
-            )
+
+        async componentDidMount() {
+          let res = await fetch('https://slack.com/api/oauth.access?client_id=5213863414.323664585827&client_secret=' + secret + '&code=' + this.props.code)
+          let response = await res.json()
+          let status = await response
+          await console.log(status)
+          await this.setStateAsync({userData: status})
+
         }
-    }
-}
+        render() {
+            console.log(this.state)
+          return (
+              <a>
+                My IP is {_.get(this.state.userData , 'error', 'Loading')}
+                </a>
 
-function mapStateToProps(state) {
-    return {
-    };
-}
+          );
+        }
+      }
 
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators({}, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(UserDataViewer);
+   export default (UserDataViewer);
