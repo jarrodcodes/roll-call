@@ -15,12 +15,9 @@ class UserLandingPage extends Component {
 
         let self = this;
         let URL = window.location.href
-        let parsedURL = _.split(URL, '=', 2)
-        let parsedURL2 = parsedURL[1]
-        let parsedURL3 = _.split(parsedURL2, '&', 2)
-        let parsedURL4 = parsedURL3[0]
-
-        if (parsedURL4.length < 10) {
+        let parsedURL = _.get(_.split(URL, /(\=|\&)/, 3), 2, '')
+        console.log(parsedURL)
+        if (parsedURL.length < 10) {
 
             return (
 
@@ -32,7 +29,7 @@ class UserLandingPage extends Component {
         else {
             return(
             <div>
-                <UserDataViewer code = {parsedURL4} />
+                <UserDataViewer code = {parsedURL} />
             </div>
             )
             }
