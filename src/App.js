@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import UserDataContainer from './containers/userdatacontainer.js';
+import UserLandingPage from './containers/userlandingpage.js';
 
 class App extends Component {
 
@@ -23,7 +23,7 @@ class App extends Component {
                 </ul>
               </div>
           </nav>
-          <Route exact path="/" component={UserDataContainer} />
+          <Route exact path="/" component={UserLandingPage} />
         </div>
       </Router>
 
