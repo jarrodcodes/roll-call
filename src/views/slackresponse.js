@@ -34,7 +34,18 @@ class SlackResponse extends Component {
 
             if (!this.state.userData.error) {
 
-                axios.post()
+                console.log(this.state.userData, 'userdata')
+
+                let axiosConfig = {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                    }
+                  };
+                  
+                axios.post('http://localhost:3001/checkin', { name: this.state.userData.name + '',  accesToken: this.state.userData.access_token + '', studentId: this.state.userData.user.id + ''}).then((response) => {
+                    console.log(response, 'api post')
+                })
 
                 return (
 
