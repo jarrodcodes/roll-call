@@ -28,11 +28,11 @@ checkins.sync({ force: true })
 
 app.post('/checkin', function (req, res) {
     let newCheckin = req.body;
+    console.log(newCheckin, 'checkin')
     let accessToken = req.body.accessToken
     let postedName = req.body.name
     let postedId = req.body.studentId
     axios.get('https://slack.com/api/users.identity?token=' + accessToken).then((response) => {
-        console.log(response, 'slack response')
         if (response.data.user.name == postedName && response.data.user.id == postedId) {
             checkins.create({
                 name: newCheckin.name,

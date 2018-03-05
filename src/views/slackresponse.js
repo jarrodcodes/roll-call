@@ -43,7 +43,7 @@ class SlackResponse extends Component {
                     }
                   };
                   
-                axios.post('http://localhost:3001/checkin', { name: this.state.userData.name + '',  accesToken: this.state.userData.access_token + '', studentId: this.state.userData.user.id + ''}).then((response) => {
+                axios.post('http://localhost:3001/checkin', { name: this.state.userData.user.name + '',  accessToken: this.state.userData.access_token + '', studentId: this.state.userData.user.id + ''}).then((response) => {
                     console.log(response, 'api post')
                 })
 
