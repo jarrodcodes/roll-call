@@ -126,3 +126,14 @@
 2018-02-08 00:16:12.308 EST [1252] LOG:  worker process: logical replication launcher (PID 2760) exited with exit code 1
 2018-02-08 00:16:12.322 EST [1084] LOG:  shutting down
 2018-02-08 00:16:12.400 EST [1252] LOG:  database system is shut down
+2018-03-05 14:37:50.438 EST [52664] LOG:  listening on IPv6 address "::1", port 5432
+2018-03-05 14:37:50.438 EST [52664] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-03-05 14:37:50.438 EST [52664] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-03-05 14:37:50.450 EST [52665] LOG:  database system was shut down at 2018-03-05 14:37:45 EST
+2018-03-05 14:37:50.453 EST [52664] LOG:  database system is ready to accept connections
+2018-03-05 14:38:30.628 EST [52737] ERROR:  relation "stations" does not exist at character 93
+2018-03-05 14:38:30.628 EST [52737] STATEMENT:  SELECT "id", "name", "accessToken", "studentId", "ipAddress", "createdAt", "updatedAt" FROM "stations" AS "stations" WHERE "stations"."studentId" LIKE '%Gold%';
+2018-03-05 15:18:55.556 EST [54558] ERROR:  invalid input syntax for type boolean: "::1" at character 99
+2018-03-05 15:18:55.556 EST [54558] STATEMENT:  INSERT INTO "checkins" ("id","name","ipAddress","createdAt","updatedAt") VALUES (DEFAULT,'Jarrod','::1','2018-03-05 20:18:55.545 +00:00','2018-03-05 20:18:55.545 +00:00') RETURNING *;
+2018-03-05 15:19:18.009 EST [54586] ERROR:  invalid input syntax for type numeric: "::1" at character 99
+2018-03-05 15:19:18.009 EST [54586] STATEMENT:  INSERT INTO "checkins" ("id","name","ipAddress","createdAt","updatedAt") VALUES (DEFAULT,'Jarrod','::1','2018-03-05 20:19:17.996 +00:00','2018-03-05 20:19:17.996 +00:00') RETURNING *;
