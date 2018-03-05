@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import UserDataViewer from '../views/userdataviewer.js';
+import SlackResponse from '../views/slackresponse.js';
 import _ from 'lodash'
 
 class UserLandingPage extends Component {
@@ -29,7 +29,7 @@ class UserLandingPage extends Component {
         else {
             return(
             <div>
-                <UserDataViewer code = {parsedURL} />
+                <SlackResponse code = {parsedURL} />
             </div>
             )
             }
