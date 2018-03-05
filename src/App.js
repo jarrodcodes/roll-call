@@ -15,7 +15,7 @@ class App extends Component {
         <div>
           <nav className="navbar navbar-expand-md bg-primary navbar-dark">
             <div className="container">
-              <a className="navbar-brand" href="/"><i className="fa d-inline fa-lg fa-train"></i><b className = "app-title">Smarta-Commute</b></a>
+              <a className="navbar-brand" href="/"><i className="fa d-inline fa-lg fa-train"></i><b className = "app-title">Roll Call</b></a>
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <a className="nav-link" href="/about"><i className="fa d-inline fa-lg"></i>About</a>
