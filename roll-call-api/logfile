@@ -137,3 +137,18 @@
 2018-03-05 15:18:55.556 EST [54558] STATEMENT:  INSERT INTO "checkins" ("id","name","ipAddress","createdAt","updatedAt") VALUES (DEFAULT,'Jarrod','::1','2018-03-05 20:18:55.545 +00:00','2018-03-05 20:18:55.545 +00:00') RETURNING *;
 2018-03-05 15:19:18.009 EST [54586] ERROR:  invalid input syntax for type numeric: "::1" at character 99
 2018-03-05 15:19:18.009 EST [54586] STATEMENT:  INSERT INTO "checkins" ("id","name","ipAddress","createdAt","updatedAt") VALUES (DEFAULT,'Jarrod','::1','2018-03-05 20:19:17.996 +00:00','2018-03-05 20:19:17.996 +00:00') RETURNING *;
+2018-03-06 14:13:06.775 EST [67205] ERROR:  column "studentid" does not exist at character 17
+2018-03-06 14:13:06.775 EST [67205] HINT:  Perhaps you meant to reference the column "checkins.studentId".
+2018-03-06 14:13:06.775 EST [67205] STATEMENT:  select distinct studentId from checkins
+2018-03-06 14:13:17.943 EST [67205] ERROR:  column "studentid" does not exist at character 17
+2018-03-06 14:13:17.943 EST [67205] HINT:  Perhaps you meant to reference the column "checkins.studentId".
+2018-03-06 14:13:17.943 EST [67205] STATEMENT:  select distinct studentId from checkins
+2018-03-06 14:13:33.684 EST [67205] ERROR:  column checkins.studentid does not exist at character 17
+2018-03-06 14:13:33.684 EST [67205] HINT:  Perhaps you meant to reference the column "checkins.studentId".
+2018-03-06 14:13:33.684 EST [67205] STATEMENT:  select distinct checkins.studentId from checkins
+2018-03-06 14:13:56.554 EST [67205] ERROR:  column "studentid" does not exist at character 17
+2018-03-06 14:13:56.554 EST [67205] HINT:  Perhaps you meant to reference the column "checkins.studentId".
+2018-03-06 14:13:56.554 EST [67205] STATEMENT:  select distinct studentId from checkins
+2018-03-06 14:14:06.473 EST [67205] ERROR:  syntax error at or near "select" at character 41
+2018-03-06 14:14:06.473 EST [67205] STATEMENT:  SELECT * FROM "public"."checkins" WHERE select distinct studentId from checkins
+	 ORDER BY "studentId" ASC LIMIT 1000

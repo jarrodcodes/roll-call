@@ -41,30 +41,44 @@ class SlackResponse extends Component {
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*',
                     }
-                  };
-                  
-                axios.post('http://localhost:3001/checkin', { name: this.state.userData.user.name + '',  accessToken: this.state.userData.access_token + '', studentId: this.state.userData.user.id + ''}).then((response) => {
+                };
+
+                axios.post('http://localhost:3001/checkin', { name: this.state.userData.user.name + '', accessToken: this.state.userData.access_token + '', studentId: this.state.userData.user.id + '' }).then((response) => {
                     console.log(response, 'api post')
                 })
 
                 return (
 
-                    <a>
-
-                        Hi {_.get(this.state.userData, 'user.name', 'Loading')}
-                    </a>
+                    <div class="py-5 text-center opaque-overlay"
+                        style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-12 text-white">
+                                    <h1 class="display-3 mb-4">Hi there + {this.state.userData.name}</h1>
+                                    <p class="lead mb-5">Pingendo is a HTML editor for everyone. Easy for newbies, useful for professionals.
+<br></br>Code quality is a must. Pingendo generates clean, battle-tested, modular Bootstrap 4 code. </p>
+                                    <a href="#" class="btn btn-lg mx-1 btn-primary">Log in.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 )
             }
             if (this.state.userData.error = "code_already_used") {
 
                 return (
-                    <div>
-                        <a>
-                            Code already used!
-</a>
-                        <br>
-                        </br>
-                        <a href="https://slack.com/oauth/authorize?scope=identity.basic&client_id=5213863414.323664585827"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
+                    <div class="py-5 text-center opaque-overlay"
+                        style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-12 text-white">
+                                    <h1 class="display-3 mb-4">This code was already used. Please log in again.</h1>
+                                    <p class="lead mb-5">Pingendo is a HTML editor for everyone. Easy for newbies, useful for professionals.
+<br></br>Code quality is a must. Pingendo generates clean, battle-tested, modular Bootstrap 4 code. </p>
+                                    <a href="https://slack.com/oauth/authorize?scope=identity.basic&client_id=5213863414.323664585827"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 )
             }
