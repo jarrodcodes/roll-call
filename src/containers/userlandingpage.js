@@ -25,9 +25,9 @@ class UserLandingPage extends Component {
                 <div class="container py-5">
                   <div class="row">
                     <div class="col-md-12 text-white">
-                      <h1 class="display-3 mb-4">Hero image intro</h1>
-                      <p class="lead mb-5">Pingendo is a HTML editor for everyone. Easy for newbies, useful for professionals.
-                        <br></br>Code quality is a must. Pingendo generates clean, battle-tested, modular Bootstrap 4 code. </p>
+                      <h1 class="display-3 mb-4">Welcome to class!</h1>
+                      <p class="lead mb-5">Please log in with Slack to check in.
+                        <br></br></p>
                         <a href="https://slack.com/oauth/authorize?scope=identity.basic&client_id=5213863414.323664585827"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
                     </div>
                   </div>
