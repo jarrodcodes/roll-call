@@ -59,189 +59,189 @@ checkins.sync({ force: true }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZELE0TE',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZGRC1HS',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U958QPFA6',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U0601SRH7',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U94CERJ00',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZM6SHRA',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZKU3V8Q',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U92C0762Z',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZD4ASUT',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U94M4UUTH',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U9GA3CHML',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U6F17CSA1',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8YTSJJD6',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U9B0G77ST',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U94EC1T0E',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U9EL94GBU',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZGHPRGA',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZPC3F26',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U5BEN1VDG',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZSHALCU',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U0569RQ2A',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U9471JD09',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U963V9SUB',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8ZL055AP',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U1X1PLRAB',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U8Z54BTHP',
         ipAddress: null
     })
 }).then(() => {
     return checkins.create({
         name: null,
         accessToken: null,
-        studentId: 'U668FSHT5',
+        studentId: 'U9KLQ0EUX',
         ipAddress: null
     })
 })
