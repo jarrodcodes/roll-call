@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 import UserLandingPage from './containers/userlandingpage.js';
+import './App.css';
 
 class App extends Component {
 

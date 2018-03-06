@@ -22,31 +22,38 @@ const checkins = studentList.define('checkins', {
     },
     ipAddress: {
         type: Sequelize.STRING
+    },
+    checkedIn: {
+        type: Sequelize.BOOLEAN
     }
 });
-checkins.sync({ force: true })
-
-app.post('/checkin', function (req, res) {
-    let newCheckin = req.body;
-    console.log(newCheckin, 'checkin')
-    let accessToken = req.body.accessToken
-    let postedName = req.body.name
-    let postedId = req.body.studentId
-    axios.get('https://slack.com/api/users.identity?token=' + accessToken).then((response) => {
-        if (response.data.user.name == postedName && response.data.user.id == postedId) {
-            checkins.create({
-                name: newCheckin.name,
-                accessToken: newCheckin.accessToken,
-                studentId: newCheckin.studentId,
-                ipAddress: req.connection.remoteAddress
-            })
-            res.send('Checked in!')
-        }
-        else {
-            res.send('Data does not match Slack.')
-        }
+checkins.sync({ force: true }).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
     })
 })
-app.listen(3001, () => {
-    console.log('Checkin server started on 3001.')
-});
+
+    app.post('/checkin', function (req, res) {
+        let newCheckin = req.body;
+        console.log(newCheckin, 'checkin')
+        let accessToken = req.body.accessToken
+        let postedName = req.body.name
+        let postedId = req.body.studentId
+        axios.get('https://slack.com/api/users.identity?token=' + accessToken).then((response) => {
+            if (response.data.user.id == postedId) {
+                checkins.update(
+                    { accessToken: newCheckin.accessToken, name: newCheckin.name, checkedIn: true, ipAddress: req.connection.remoteAddress }, { where: {studentId: postedId }}
+                )
+                res.send('Checked in!')
+            }
+            else {
+                res.send('Data does not match Slack.')
+            }
+        })
+    })
+    app.listen(3001, () => {
+        console.log('Checkin server started on 3001.')
+    });
