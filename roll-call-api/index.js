@@ -34,6 +34,216 @@ checkins.sync({ force: true }).then(() => {
         studentId: 'U668FSHT5',
         ipAddress: null
     })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U8UPLMM71',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U93K6D81M',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U8ZRZ85UM',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
+}).then(() => {
+    return checkins.create({
+        name: null,
+        accessToken: null,
+        studentId: 'U668FSHT5',
+        ipAddress: null
+    })
 })
 
     app.post('/checkin', function (req, res) {
