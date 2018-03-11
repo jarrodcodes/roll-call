@@ -51,7 +51,7 @@ class SlackResponse extends Component {
 
                 this.checkIn(this.state.userData.user.name, this.state.userData.access_token, this.state.userData.user.id)
 
-                if (this.state.checkedIn == 200) {
+                if (this.state.checkedIn === 200) {
 
                     return (
 
@@ -60,7 +60,7 @@ class SlackResponse extends Component {
                             <div className="container py-5">
                                 <div className="row">
                                     <div className="col-md-12 text-white">
-                                        <h1 class="display-3 mb-4">Hi there {this.state.userData.user.name}!</h1>
+                                        <h1 className="display-3 mb-4">Hi there {this.state.userData.user.name}!</h1>
                                         <p className="lead mb-5">You are now logged in.
 <br></br></p>
                                         <a href="#" className="btn btn-lg mx-1 btn-primary"></a>
@@ -70,7 +70,7 @@ class SlackResponse extends Component {
                         </div>
                     )
                 }
-                else if (this.state.checkedIn != 200) {
+                if (this.state.checkedIn != 200) {
 
                     return (
 
@@ -79,7 +79,7 @@ class SlackResponse extends Component {
                             <div className="container py-5">
                                 <div className="row">
                                     <div className="col-md-12 text-white">
-                                        <h1 class="display-3 mb-4">There was an error</h1>
+                                        <h1 className="display-3 mb-4">There was an error.</h1>
                                         <p className="lead mb-5">
                                             <br></br></p>
                                         <a href="#" className="btn btn-lg mx-1 btn-primary"></a>
