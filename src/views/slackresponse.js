@@ -20,7 +20,6 @@ class SlackResponse extends Component {
     }
 
     async componentDidMount() {
-
         let slackCall = await fetch('https://slack.com/api/oauth.access?client_id=5213863414.323664585827&client_secret=' + secret + '&code=' + this.props.code)
         let SlackResponse = await slackCall.json()
         await this.setStateAsync({ userData: SlackResponse })
@@ -30,15 +29,30 @@ class SlackResponse extends Component {
         let post = await axios.post('http://localhost:3001/checkin', { name: name + '', accessToken: accessToken + '', studentId: studentId + '' })
         console.log(post)
         if (!this.state.checkedIn) {
-            await this.setStateAsync({ checkedIn: post.status })
+            await this.setStateAsync({ checkedIn: post.data })
         }
     }
 
     render() {
 
-        let self = this;
-        console.log(self.state, 'state')
         if (this.state.userData) {
+            if (this.state.userData.error == "code_already_used") {
+                return (
+                    <div class="py-5 text-center opaque-overlay"
+                        style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-12 text-white">
+                                    <h1 class="display-3 mb-4">This code was already used. Please log in again.</h1>
+                                    <p class="lead mb-5">
+                                        <br></br></p>
+                                    <a href="https://slack.com/oauth/authorize?scope=identity.basic&client_id=5213863414.323664585827"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
 
             if (!this.state.userData.error) {
 
@@ -51,53 +65,50 @@ class SlackResponse extends Component {
 
                 this.checkIn(this.state.userData.user.name, this.state.userData.access_token, this.state.userData.user.id)
 
-                if (this.state.checkedIn === 200) {
-
-                    return (
-
-                        <div className="py-5 text-center opaque-overlay"
-                            style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
-                            <div className="container py-5">
-                                <div className="row">
-                                    <div className="col-md-12 text-white">
-                                        <h1 className="display-3 mb-4">Hi there {this.state.userData.user.name}!</h1>
-                                        <p className="lead mb-5">You are now logged in.
+                if (this.state.checkedIn) {
+                    if (this.state.checkedIn == "Checked in!") {
+                        return (
+                            <div className="py-5 text-center opaque-overlay"
+                                style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
+                                <div className="container py-5">
+                                    <div className="row">
+                                        <div className="col-md-12 text-white">
+                                            <h1 className="display-3 mb-4">Hi there {this.state.userData.user.name}!</h1>
+                                            <p className="lead mb-5">You are now logged in. ✅
 <br></br></p>
-                                        <a href="#" className="btn btn-lg mx-1 btn-primary"></a>
+                                            {/* <a href="#" className="btn btn-lg mx-1 btn-primary"></a> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                }
-                if (this.state.checkedIn != 200) {
-
-                    return (
-
-                        <div className="py-5 text-center opaque-overlay"
-                            style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
-                            <div className="container py-5">
-                                <div className="row">
-                                    <div className="col-md-12 text-white">
-                                        <h1 className="display-3 mb-4">There was an error.</h1>
-                                        <p className="lead mb-5">
-                                            <br></br></p>
-                                        <a href="#" className="btn btn-lg mx-1 btn-primary"></a>
+                        )
+                    }
+                    else if (this.state.checkedIn != "Checked in!") {
+                        return (
+                            <div className="py-5 text-center opaque-overlay"
+                                style={{ backgroundImage: 'url(http://ww1.prweb.com/prfiles/2015/11/17/13087538/digitalcrafts-students-4.jpg)' }}>
+                                <div className="container py-5">
+                                    <div className="row">
+                                        <div className="col-md-12 text-white">
+                                            <h1 className="display-3 mb-4">There was an error.</h1>
+                                            <p className="lead mb-5">
+                                                <br></br></p>
+                                            {/* <a href="#" className="btn btn-lg mx-1 btn-primary"></a> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                }
-                else {
-                    return (
-                        <a>
-                            Loading...
+                        )
+                    }
+                    else {
+                        return (
+                            <a>
+                                Loading...
 </a>
-                    )
+                        )
+                    }
                 }
             }
-
             else {
                 return (
                     <a>
@@ -106,7 +117,6 @@ class SlackResponse extends Component {
                 )
             }
         }
-
         return (
             <a>
                 Loading...
